@@ -5,7 +5,7 @@ import { ComingSoonOverlay } from '@/components/ComingSoonOverlay';
 
 const Index: React.FC = () => {
   return (
-    <div className="flex w-full flex-col items-center h-screen bg-white">
+    <div className="flex w-full flex-col items-center h-screen bg-white overflow-hidden">
       <Header />
       <main className="flex h-[90vh] justify-between items-start w-full relative max-md:h-auto max-md:flex-col max-sm:h-auto">
         <ImageSection
