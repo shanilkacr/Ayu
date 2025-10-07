@@ -1,12 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { Header } from '@/components/Header';
+import { ImageSection } from '@/components/ImageSection';
+import { ComingSoonOverlay } from '@/components/ComingSoonOverlay';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="flex w-full flex-col items-center min-h-screen bg-white">
+      <Header />
+      <main className="flex h-[916px] justify-between items-start w-full relative max-md:h-auto max-md:flex-col max-sm:h-auto">
+        <ImageSection
+          leftImageSrc="https://api.builder.io/api/v1/image/assets/TEMP/15bedf722afd75669ab182bc9c85e339db68f309?width=1440"
+          rightImageSrc="https://api.builder.io/api/v1/image/assets/TEMP/d53fbb489b259a93ac3af2813cfcb334defee2db?width=1440"
+          leftImageAlt="AYU brand aesthetic - left panel"
+          rightImageAlt="AYU brand aesthetic - right panel"
+        />
+        <ComingSoonOverlay />
+      </main>
     </div>
   );
 };
