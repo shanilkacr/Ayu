@@ -14,7 +14,7 @@ export const ImageSection: React.FC<ImageSectionProps> = ({
   rightImageAlt = ""
 }) => {
   return (
-    <section className="flex h-[916px] justify-between items-start w-full relative max-md:h-auto max-md:flex-col max-sm:h-auto">
+    <section className="flex h-full justify-between items-start w-full relative max-md:h-auto max-md:flex-col max-sm:h-auto">
       <img
         src={leftImageSrc}
         alt={leftImageAlt}
