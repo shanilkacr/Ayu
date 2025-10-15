@@ -15,6 +15,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Coax', 'system-ui', 'sans-serif'],
+        'la-belle': ['La Belle Aurore', 'cursive'],
+        'lato': ['Lato', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
